@@ -1638,10 +1638,10 @@ var distData = {
             },
             {
                 Ticketinfo: "DIY手做教學 200元/人提供用餐服務 150/人",
-                Zone: "高雄市",
+                Zone: "岡山區",
                 Px: "120.26704",
                 Py: "22.81767",
-                Add: "高雄市高雄市岡山區本工一路25號",
+                Add: "高雄市岡山區本工一路25號",
                 Gov: "397000000A",
                 Class2: null,
                 Class1: "14",
@@ -2742,15 +2742,12 @@ pagId.addEventListener('click', function (e) {
     locList(locName, locNum);
 });
 window.addEventListener('scroll',function(){
-    if(window.scrollY + window.innerHeight === body.offsetHeight){
+    if(window.scrollY + (window.innerHeight * 1.5)  >  body.offsetHeight){
         goTopId.style.visibility = 'visible';
     } else {
         goTopId.style.visibility = 'hidden';
     }
 })
-// goTopId.addEventListener('click',function(e){
-//     e.preventDefault();
-// })
 
 // 函式
 // 行政區 option
