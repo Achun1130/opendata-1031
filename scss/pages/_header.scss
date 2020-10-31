@@ -1,0 +1,104 @@
+.p-header {
+    &__banner {
+        height: 380px;
+    }
+}
+
+.p-nav {
+    padding: 20px 26px 18px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    margin-top: -28px;
+}
+
+.p-divider {
+    position: relative;
+    margin: 37px 0 65px;
+    &__icon {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 2px solid $primary;
+        margin: 0 auto;
+        background-color: #f7f7f7;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-width: 8px 6px 0;
+            border-style: solid;
+            border-color: $primary transparent transparent;
+        }
+    }
+    &__line {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 1px;
+        background-image: linear-gradient(to right, $primary 0%, $primary 50%, transparent 50%);
+        background-size: 10px 1px;
+        background-repeat: repeat-x;
+    }
+}
+
+.p-loc {
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    height: 100%;
+    &__img {
+        display: block;
+        height: 155px;
+        overflow: hidden;
+        position: relative;
+    }
+    &__title{
+        font-size: 1.5rem;
+        color: $white;
+        position: absolute;
+        bottom: 14px;
+        left: 22px;
+    }
+    &__subtitle {
+        font-size: 1rem;
+        line-height: 1.1875;
+        color: $white;
+        position: absolute;
+        bottom: 11px;
+        right: 24px;
+    }
+    &__body {
+        padding: 15px 24px 20px;
+    }
+    &__text {
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+    &__icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 1;
+        text-align: center;
+        margin-right: 8px;
+    }
+}
+
+.p-main__title {
+    text-align: center;
+    color: $secondary;
+    margin-bottom: 24px;
+}
+
+.p-btn__goTop {
+    display: block;
+    position: fixed;
+    bottom: 195px;
+    right: 2.734375%;
+    visibility: hidden;
+}
