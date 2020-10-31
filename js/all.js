@@ -2906,7 +2906,7 @@ function locList(distName, pagActive = 1) {
     if (row.textContent === '') {
         var p = document.createElement('p');
         p.classList.add('h3', 'mb-64', 'mt-30', 'text-secondary');
-        p.textContent = '- - - - 查無資料，請重新搜尋 - - - - ';
+        p.textContent = '- - - - 查無資料 - - - - ';
         row.classList.add('justify-content-center');
         row.appendChild(p);
     }
